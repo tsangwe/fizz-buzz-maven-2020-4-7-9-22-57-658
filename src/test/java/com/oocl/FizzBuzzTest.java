@@ -17,7 +17,7 @@ public class FizzBuzzTest {
         String actualResponse = fizzBuzz.response(number);
 
         // Then
-        assertEquals(actualResponse, "1");
+        assertEquals(actualResponse, number+"");
     }
 
     @Test
@@ -42,5 +42,17 @@ public class FizzBuzzTest {
 
         // Then
         assertEquals(actualResponse, "Buzz");
+    }
+
+    @Test
+    public void test_fizzBuzz_response_when_multiples_of_3_and_5_return_fizzBuzz() {
+        // Given
+        int number = 15;
+
+        // When
+        String actualResponse = fizzBuzz.response(number);
+
+        // Then
+        assertEquals(actualResponse, "FizzBuzz");
     }
 }
