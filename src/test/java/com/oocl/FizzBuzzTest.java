@@ -31,4 +31,16 @@ public class FizzBuzzTest {
         // Then
         assertEquals(actualResponse, "Fizz");
     }
+
+    @Test
+    public void test_fizzBuzz_response_when_multiples_of_5_return_buzz() {
+        // Given
+        int number = 5;
+
+        // When
+        String actualResponse = fizzBuzz.response(number);
+
+        // Then
+        assertEquals(actualResponse, "Buzz");
+    }
 }
