@@ -19,4 +19,16 @@ public class FizzBuzzTest {
         // Then
         assertEquals(actualResponse, "1");
     }
+
+    @Test
+    public void () {
+        // Given
+        int number = 3;
+
+        // When
+        String actualResponse = fizzBuzz.response(number);
+
+        // Then
+        assertEquals(actualResponse, "Fizz");
+    }
 }
