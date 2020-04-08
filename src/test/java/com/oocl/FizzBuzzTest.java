@@ -21,7 +21,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void () {
+    public void test_fizzBuzz_response_when_multiples_of_3_return_fizz() {
         // Given
         int number = 3;
 
