@@ -4,15 +4,15 @@ public class FizzBuzz {
     public FizzBuzz() {}
 
     public String response(int number) {
-        if (number % 15 == 0) {
-            return "FizzBuzz";
-        }
+        String message = "";
+
         if (number % 3 == 0) {
-            return "Fizz";
+            message += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            message += "Buzz";
         }
-        return number + "";
+
+        return (message.equals("")) ? number + "" : message;
     }
 }
